@@ -1,0 +1,949 @@
+<!doctype html>
+<html class="theme-next use-motion theme-next-mist">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v="/>
+
+
+    <meta name="description" content="每一次黄昏时分，向夕阳致敬" />
+
+
+
+  <meta name="keywords" content="iOS,项目问题," />
+
+
+
+  <link rel="alternate" href="https://www.baidu.com" title="BearsG's Notes" type="application/atom+xml" />
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=" />
+
+
+<meta name="description" content="##项目问题集锦
+www.raywenderlich.com
+#####1.MAMapKit/MAMapKit.h’ file not found
+123`&apos;MAMapKit/MAMapKit.h&apos; file not found `&apos;MAMapKit/MAMapKit.h&apos; file not found 每次打开的时候都报这样的错误，但是重新启动几次就没有问题，如果不管这个错误也没事，可以真机和模">
+<meta property="og:type" content="article">
+<meta property="og:title" content="项目问题集锦（一）">
+<meta property="og:url" content="http://BearsG.com/2015/04/20/项目问题集锦（一）/index.html">
+<meta property="og:site_name" content="BearsG's Notes">
+<meta property="og:description" content="##项目问题集锦
+www.raywenderlich.com
+#####1.MAMapKit/MAMapKit.h’ file not found
+123`&apos;MAMapKit/MAMapKit.h&apos; file not found `&apos;MAMapKit/MAMapKit.h&apos; file not found 每次打开的时候都报这样的错误，但是重新启动几次就没有问题，如果不管这个错误也没事，可以真机和模">
+<meta property="og:updated_time" content="2016-01-13T09:40:38.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="项目问题集锦（一）">
+<meta name="twitter:description" content="##项目问题集锦
+www.raywenderlich.com
+#####1.MAMapKit/MAMapKit.h’ file not found
+123`&apos;MAMapKit/MAMapKit.h&apos; file not found `&apos;MAMapKit/MAMapKit.h&apos; file not found 每次打开的时候都报这样的错误，但是重新启动几次就没有问题，如果不管这个错误也没事，可以真机和模">
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'post'
+  };
+</script>
+
+  <title> 项目问题集锦（一） | BearsG's Notes </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <a href="/" class="brand" rel="start">
+      <span class="logo">
+        <i class="icon-next-logo"></i>
+      </span>
+      <span class="site-title">BearsG's Notes</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu menu-left">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon icon-next-home"></i> <br />
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            <i class="menu-item-icon icon-next-about"></i> <br />
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            <i class="menu-item-icon icon-next-archives"></i> <br />
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            <i class="menu-item-icon icon-next-tags"></i> <br />
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-guestbook">
+          <a href="/guestbook" rel="section">
+            <i class="menu-item-icon icon-next-guestbook"></i> <br />
+            留言
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <form class="site-search-form">
+    <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+  </form>
+
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'xdaveCwGZFFMdtvUogpH','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content"> 
+
+  <div id="posts" class="posts-expand">
+    
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              项目问题集锦（一）
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-04-20T11:34:59+08:00" content="2015-04-20">
+            2015-04-20
+          </time>
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/2015/04/20/项目问题集锦（一）/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2015/04/20/项目问题集锦（一）/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><p>##项目问题集锦</p>
+<p><a href="http://www.raywenderlich.com" target="_blank" rel="external">www.raywenderlich.com</a></p>
+<p>#####<strong>1.</strong>MAMapKit/MAMapKit.h’ file not found</p>
+<figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">`<span class="string">'MAMapKit/MAMapKit.h'</span> <span class="keyword">file</span> <span class="keyword">not</span> found `</span><br><span class="line"><span class="string">'MAMapKit/MAMapKit.h'</span> <span class="keyword">file</span> <span class="keyword">not</span> found 每次打开的时候都报这样的错误，但是重新启动几次就没有问题，如果不管这个错误也没事，可以真机和模拟器运行。这是为什么？？？ 我自己也重新导入这个框架几遍了，都没有解决。。</span><br></pre></td></tr></table></figure>
+<p>####解决方案</p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">我们平时一般的设置就是在工程文件的TARGETS里的<span class="keyword">Build </span>Setting设置 search Patshs，把这里边的设置全部拷贝一份到和TARGETS平级的PROJECT的<span class="keyword">Build </span>Setting设置 search Patshs。我这样做解决了这个问题。</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="u5F85_u52A0_u6DF1_u4E86_u89E3"><a href="#u5F85_u52A0_u6DF1_u4E86_u89E3" class="headerlink" title="待加深了解"></a>待加深了解</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="number">1.</span> 翻墙</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span> Github、Stack Overflow</span><br><span class="line"></span><br><span class="line"><span class="number">3.</span> 看WWDC技术视频 苹果文档</span><br><span class="line"></span><br><span class="line"><span class="number">4.</span> Onevcat、唐巧、Kitten-Yang</span><br><span class="line"></span><br><span class="line"><span class="number">5.</span> 对茶、咖啡文化有所研究</span><br></pre></td></tr></table></figure>
+<h2 id="SMS_SDK"><a href="#SMS_SDK" class="headerlink" title="SMS  SDK"></a>SMS  SDK</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">   *免费短信验证码SDK （iOS版本），请前往http:<span class="comment">//sms.mob.com/Download 下载SDK</span></span><br><span class="line"><span class="number">1.</span>  第一步 获取短信SDK</span><br><span class="line"><span class="number">2.</span>  第二步 导入SDK</span><br><span class="line"><span class="number">3.</span>  第三步 添加依赖库文件</span><br><span class="line"><span class="number">4.</span>  第四步 添加初始化代码</span><br><span class="line"><span class="number">5.</span>  第五步 使用SDK提供的API  appKey 和 appSecret的获取：</span><br><span class="line">   （<span class="number">1</span>）到Mob官网注册成为Mob开发者；</span><br><span class="line">   （<span class="number">2</span>）到应用管理后台新建应用。</span><br></pre></td></tr></table></figure>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/iOS/" rel="tag">#iOS</a>
+          
+            <a href="/tags/项目问题/" rel="tag">#项目问题</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/05/10/git常用操作/" rel="prev">git常用操作</a>
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/03/06/ITerm推送本地文件到github/" rel="next">ITerm推送本地文件到github</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+ </div>
+
+        
+            <!-- 多说热评文章-->
+            <p>热评文章</p>
+            <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+        
+
+        
+          <div class="comments" id="comments">
+            
+              <div class="ds-thread" data-thread-key="2015/04/20/项目问题集锦（一）/"
+                   data-title="项目问题集锦（一）" data-url="http://BearsG.com/2015/04/20/项目问题集锦（一）/">
+              </div>
+            
+          </div>
+        
+      </div>
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="/uploads/avatar.jpg" alt="王赛" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">王赛</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">每一次黄昏时分，向夕阳致敬</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">15</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            
+              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-name">分类</span>
+              
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">15</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="https://www.baidu.com" rel="alternate">
+              <i class="menu-item-icon icon-next-feed"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/wangsaizzy" target="_blank">github</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="" target="_blank">twitter</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/3070509661/profile?topnav=1&wvr=6" target="_blank">weibo</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="" target="_blank">facebook</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://my.csdn.net/ws1352864983" target="_blank">CSDN</a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name"></p>
+            
+              <span class="links-of-author-item">
+              <a href="N" target="_blank">0</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="e" target="_blank">1</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="x" target="_blank">2</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="t" target="_blank">3</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="N" target="_blank">4</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="o" target="_blank">5</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="t" target="_blank">6</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="e" target="_blank">7</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href=":" target="_blank">8</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="h" target="_blank">9</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="t" target="_blank">10</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="t" target="_blank">11</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="p" target="_blank">12</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="s" target="_blank">13</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href=":" target="_blank">14</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="/" target="_blank">15</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="/" target="_blank">16</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="g" target="_blank">17</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="i" target="_blank">18</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="t" target="_blank">19</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="h" target="_blank">20</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="u" target="_blank">21</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="b" target="_blank">22</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="." target="_blank">23</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="c" target="_blank">24</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="o" target="_blank">25</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="m" target="_blank">26</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="/" target="_blank">27</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="i" target="_blank">28</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="i" target="_blank">29</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="s" target="_blank">30</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="s" target="_blank">31</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="n" target="_blank">32</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="a" target="_blank">33</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="n" target="_blank">34</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="/" target="_blank">35</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="h" target="_blank">36</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="e" target="_blank">37</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="x" target="_blank">38</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="o" target="_blank">39</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="-" target="_blank">40</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="t" target="_blank">41</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="h" target="_blank">42</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="e" target="_blank">43</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="m" target="_blank">44</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="e" target="_blank">45</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="-" target="_blank">46</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="n" target="_blank">47</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="e" target="_blank">48</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="x" target="_blank">49</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="t" target="_blank">50</a>
+              </span>
+            
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u5F85_u52A0_u6DF1_u4E86_u89E3"><span class="nav-number">1.</span> <span class="nav-text">待加深了解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SMS_SDK"><span class="nav-number">2.</span> <span class="nav-text">SMS  SDK</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner"> <div class="copyright" >
+  
+  &copy; &nbsp; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="icon-next-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">王赛</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+ </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+    
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"bearsgx"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+     
+
+    
+  
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v="></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v="></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=" id="motion.global"></script>
+
+
+
+
+  <script type="text/javascript" src="/js/nav-toggle.js?v="></script>
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 0.4 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    var $tocContent = $('.post-toc-content');
+    if (isDesktop() && CONFIG.sidebar === 'post') {
+      if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+        displaySidebar();
+      }
+    }
+  });
+</script>
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+      if (isMobile()) {
+        FastClick.attach(document.body);
+      }
+    });
+  </script>
+
+  
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+  
+  
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"3","bdPos":"left","bdTop":"250"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+  
+  <script type="text/javascript" src="/js/lazyload.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $("#posts").find('img').lazyload({
+        placeholder: "/images/loading.gif",
+        effect: "fadeIn"
+      });
+    });
+  </script>
+</body>
+</html>
